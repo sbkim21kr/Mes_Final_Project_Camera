@@ -34,7 +34,7 @@ def main():
             break
 
         # Overlay info on preview
-        overlay_text = f"{today_str}/{run_time} | Next photo: _{counter:02d}.jpg"
+        overlay_text = f"{today_str}/{run_time} | _{counter:02d}.jpg"
         cv2.putText(frame, overlay_text, (10, 30),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
 
